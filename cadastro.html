@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tela de Login</title>
+    <title>Tela de Cadastro</title>
     <link rel="stylesheet" href="/assets/css/pages/login.css" />
   </head>
 
@@ -13,14 +13,14 @@
         <div class="icon">
           <img src="./assets/imgs/log-in.svg" alt="login-icon" />
         </div>
-        <h1>Logue com email</h1>
-        <p>Faça login para começar a fazer seus orçamentos!</p>
+        <h1>Cadastre-se</h1>
+        <p>Realize seu cadastro para começar a fazer seus orçamentos!</p>
         <form>
           <div class="input-field">
-            <input type="email" placeholder="E-mail" required />
+            <input type="email" placeholder="Insira um e-mail" required />
           </div>
           <div class="input-field">
-            <input type="password" id="password" placeholder="Senha" required />
+            <input type="password" id="password" placeholder="Insira uma senha" required />
             <img
               src="/assets/imgs/eye-off.svg"
               alt="mostrar-senha"
@@ -28,14 +28,19 @@
             />
           </div>
 
-          <div class="options">
-            <a href="#">Esqueceu a senha?</a>
+          <div class="input-field">
+            <input type="password" id="password" placeholder="Repita sua senha" required />
+            <img
+              src="/assets/imgs/eye-off.svg"
+              alt="mostrar-senha"
+              id="togglePassword"
+            />
           </div>
 
-          <button type="submit">Login</button>
+          <button type="submit">Cadastrar-se</button>
         </form>
 
-        <p class="texto-registro">Não possui cadastro? <a href="/cadastro.html">Registre-se</a></p>
+        <p class="texto-registro">Já possui uma conta? <a href="/login.html">Login</a></p>
       </div>
     </section>
 

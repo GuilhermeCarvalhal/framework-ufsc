@@ -1,0 +1,8 @@
+.sidebar-menu {
+    background-color: var(--main-bg-amarelo);
+    height: 100vh;
+    padding: 1.5rem;
+    color: var(--preto);
+    display: inline-flex;
+    flex-direction: column;
+}

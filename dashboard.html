@@ -6,6 +6,8 @@
     <title>Dashboard</title>
 
     <link rel="stylesheet" href="/assets/css/pages/dashboard/dashboard.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </head>
 <body>
     
@@ -14,10 +16,64 @@
             <img src="/assets/imgs/logo.svg" alt="logo do sistema">
         </a>
         
-        <ul>
+        <ul class="nav-links">
             <li>
-                <a href="" class="selected">
+                <a href="#" class="selected">
+                    <box-icon name='home'></box-icon>
                     <span class="nav-text">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="">
+                    <box-icon type='solid' name='user-detail'></box-icon>
+                    <span class="nav-text">Clientes</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="">
+                    <box-icon name='box' ></box-icon>
+                    <span class="nav-text">Estoque</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="">
+                    <box-icon name='dollar'></box-icon>
+                    <span class="nav-text">Orçamento</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="">
+                    <box-icon name='checkbox-checked' type='solid' ></box-icon>
+                    <span class="nav-text">Status serviços</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="">
+                    <box-icon name='clipboard'></box-icon>
+                    <span class="nav-text">Histórico</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="">
+                    <box-icon name='cog' ></box-icon>
+                    <span class="nav-text">Configurações</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="logout">
+            <li>
+                <div class="container-user">
+                    <div class="user-image">
+                        <img src="assets/imgs/profile-image.png" alt="Imagem do usuário">
+                    </div>
+                    <div class="user-content">
+                        <p class="user-name">Nome da Silva</p>
+                        <p class="user-email">example@gmail.com</p>
+                    </div>
+                </div>
+                <a href="/login.html">
+                    <box-icon name='log-out' ></box-icon>
                 </a>
             </li>
         </ul>

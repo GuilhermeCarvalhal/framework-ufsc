@@ -79,7 +79,76 @@
 .btn-add-orcamento:hover .dollar-icon{
    stroke-width: white;
    fill: var(--branco);
-} /*
+} */
 
+.popup-cliente,
+.popup-servico,
+.popup-orcamento {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 12px;
+    color: var(--branco);
+    background-color: var(--amarelo-modal-default);
+}
 
+.popup-cliente .popup-titulo-cliente,
+.popup-servico .popup-titulo-servico,
+.popup-orcamento .popup-titulo-orcamento {
+    font-size: 24px;
+    font-family: fontBold;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+input, select {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: var(--branco);
+    background-color: transparent;
+    border: solid 1px var(--branco);
+    border-radius: 12px;
+    padding: 8px;
+    outline: none;
+}
+
+.btn-forms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+
+}
+
+.btn-cancel-form, 
+.btn-confirm-form {
+    font-size: 16px;
+    font-family: fontBold;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    place-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+
+}
 

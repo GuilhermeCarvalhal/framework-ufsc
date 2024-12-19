@@ -1,0 +1,85 @@
+.bg-main {
+    background-color: var(--main-bg-amarelo);
+    padding: 1rem;
+    width: 100%;
+}
+
+.main-content {
+    background-color: var(--bg-dash);
+    border-radius: 12px;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.container-bem-vindo-txt h1{
+    font-family: fontBold;
+    font-size: 20px;
+}
+
+.container-bem-vindo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-operacoes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.btn-add-cliente, 
+.btn-add-servico, 
+.btn-add-orcamento {
+    font-size: 16px;
+    font-family: fontBold;
+
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: solid 1px var(--amarelo-modal-borda);
+    border-radius: 12px; 
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.btn-add-cliente {
+    color: var(--amarelo-modal-borda);
+    background-color: transparent;
+}
+
+.btn-add-cliente:hover,
+.btn-add-orcamento:hover,
+.btn-add-servico:hover{
+    background-color: var(--amarelo-modal-toggle);
+    color: var(--branco);
+    border: solid 1px var(--preto);;
+}
+
+.btn-add-servico,
+.btn-add-orcamento {
+    background-color: transparent;
+    color: var(--amarelo-modal-borda);
+}
+
+.btn-add-cliente:hover .user-icon{
+    fill: var(--branco);
+}
+
+/*.btn-add-servico:hover .note-icon{
+    stroke: white;
+    fill: white;
+}
+
+.btn-add-orcamento:hover .dollar-icon{
+   stroke-width: white;
+   fill: var(--branco);
+} /*
+
+
+

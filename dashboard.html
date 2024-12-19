@@ -1,85 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
 
-    <link rel="stylesheet" href="/assets/css/pages/dashboard/dashboard.css">
+    <link rel="stylesheet" href="/assets/css/pages/dashboard/dashboard.css" />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-</head>
-<body>
-    
+  </head>
+  <body>
     <aside class="sidebar-menu">
-        <a href="#" class="container-logo">
-            <img src="/assets/imgs/logo.svg" alt="logo do sistema">
-        </a>
-        
-        <ul class="nav-links">
-            <li>
-                <a href="#" class="selected">
-                    <box-icon name='home'></box-icon>
-                    <span class="nav-text">Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="">
-                    <box-icon type='solid' name='user-detail'></box-icon>
-                    <span class="nav-text">Clientes</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="">
-                    <box-icon name='box' ></box-icon>
-                    <span class="nav-text">Estoque</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="">
-                    <box-icon name='dollar'></box-icon>
-                    <span class="nav-text">Orçamento</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="">
-                    <box-icon name='checkbox-checked' type='solid' ></box-icon>
-                    <span class="nav-text">Status serviços</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="">
-                    <box-icon name='clipboard'></box-icon>
-                    <span class="nav-text">Histórico</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="">
-                    <box-icon name='cog' ></box-icon>
-                    <span class="nav-text">Configurações</span>
-                </a>
-            </li>
-        </ul>
+      <a href="#" class="container-logo">
+        <img src="/assets/imgs/logo.svg" alt="logo do sistema" />
+      </a>
 
-        <ul class="logout">
-            <li>
-                <div class="container-user">
-                    <div class="user-image">
-                        <img src="assets/imgs/profile-image.png" alt="Imagem do usuário">
-                    </div>
-                    <div class="user-content">
-                        <p class="user-name">Nome da Silva</p>
-                        <p class="user-email">example@gmail.com</p>
-                    </div>
-                </div>
-                <a href="/login.html">
-                    <box-icon name='log-out' ></box-icon>
-                </a>
-            </li>
-        </ul>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="selected">
+            <box-icon name="home"></box-icon>
+            <span class="nav-text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="">
+            <box-icon type="solid" name="user-detail"></box-icon>
+            <span class="nav-text">Clientes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="">
+            <box-icon name="box"></box-icon>
+            <span class="nav-text">Estoque</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="">
+            <box-icon name="dollar"></box-icon>
+            <span class="nav-text">Orçamento</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="">
+            <box-icon name="checkbox-checked" type="solid"></box-icon>
+            <span class="nav-text">Status serviços</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="">
+            <box-icon name="clipboard"></box-icon>
+            <span class="nav-text">Histórico</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="">
+            <box-icon name="cog"></box-icon>
+            <span class="nav-text">Configurações</span>
+          </a>
+        </li>
+      </ul>
 
+      <ul class="logout">
+        <li>
+          <div class="container-user">
+            <div class="user-image">
+              <img
+                src="assets/imgs/profile-image.png"
+                alt="Imagem do usuário"
+              />
+            </div>
+            <div class="user-content">
+              <p class="user-name">Nome da Silva</p>
+              <p class="user-email">example@gmail.com</p>
+            </div>
+          </div>
+          <a href="/login.html">
+            <box-icon name="log-out"></box-icon>
+          </a>
+        </li>
+      </ul>
     </aside>
- 
 
-</body>
+    <main class="bg-main">
+      <section class="main-content">
+        <div class="container-bem-vindo">
+          <div class="container-bem-vindo-txt">
+            <h1>Bem vindo, Nome da Silva</h1>
+          </div>
+
+          <div class="container-operacoes">
+            <div class="box-btn-cadastrar-cliente">
+              <button class="btn-add-cliente" id="openModalCliente">
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="var(--amarelo-modal-borda)" class="user-icon" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_29_161)">
+                  <path d="M16 19V17C16 15.9391 15.5786 14.9217 14.8284 14.1716C14.0783 13.4214 13.0609 13 12 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19" stroke="amarelo-modal-borda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8.5 9C10.7091 9 12.5 7.20914 12.5 5C12.5 2.79086 10.7091 1 8.5 1C6.29086 1 4.5 2.79086 4.5 5C4.5 7.20914 6.29086 9 8.5 9Z" stroke="amarelo-modal-borda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 6V12" stroke="amarelo-modal-borda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M23 9H17" stroke="amarelo-modal-borda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_29_161">
+                  <rect width="24" height="20"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                <span>Cadastrar Cliente</span>
+              </button>
+            </div>
+
+            <div class="box-btn-cadastrar-servico">
+              <button class="btn-add-servico" id="openModalServico">
+                <svg width="23" height="24" viewBox="0 0 23 24" fill="none" class="note-icon" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_29_169)">
+                  <path d="M10 4.5H3C2.46957 4.5 1.96086 4.71071 1.58579 5.08579C1.21071 5.46086 1 5.96957 1 6.5V20.5C1 21.0304 1.21071 21.5391 1.58579 21.9142C1.96086 22.2893 2.46957 22.5 3 22.5H17C17.5304 22.5 18.0391 22.2893 18.4142 21.9142C18.7893 21.5391 19 21.0304 19 20.5V13.5" stroke="#7C4F0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17.5 2.99998C17.8978 2.60216 18.4374 2.37866 19 2.37866C19.5626 2.37866 20.1022 2.60216 20.5 2.99998C20.8978 3.39781 21.1213 3.93737 21.1213 4.49998C21.1213 5.06259 20.8978 5.60216 20.5 5.99998L11 15.5L7 16.5L8 12.5L17.5 2.99998Z" stroke="#7C4F0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_29_169">
+                  <rect width="23" height="23" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  
+                <span>Cadastrar Serviço</span>
+              </button>
+            </div>
+
+            <div class="box-btn-gerar-orcamento">
+              <button class="btn-add-orcamento" id="openModalOrcamento">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="dollar-icon" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 1V23" stroke="#7C4F0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6313 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6313 13.6815 18 14.5717 18 15.5C18 16.4283 17.6313 17.3185 16.9749 17.9749C16.3185 18.6313 15.4283 19 14.5 19H6" stroke="#7C4F0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                <span>Gerar Orçamento</span>
+              </button>
+            </div>
+
+            <div id="modalCliente" class="modal">
+              <div class="popup-cliente"></div>
+              <div class="popup-titulo-cliente">
+                <img src="assets/imgs/user-plus.svg" alt="Adicionar-Usuário">
+                <span>Cadastrar Cliente</span>
+
+                <form id="form-cliente"></form>
+
+                  <label for="nome_cliente">Nome do Cliente</label>
+                  <input type="text" id="nome_cliente" name="nome_cliente" required>
+
+                  <label for="cpf_cliente">CPF</label>
+                  <input type="number" id="cpf_cliente" name="cpf_cliente" required>
+
+                  <label for="data_cliente">Data do Cliente</label>
+                  <input type="date" id="data_cliente" name="data_cliente" required>
+
+                  <div class="btn-forms">
+                    <button class="btn-cancel-form" type="reset" id="closeModalBtnCompra">Cancelar</button>
+                    <button class="btn-confirm-form" type="submit">Finalizar</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
